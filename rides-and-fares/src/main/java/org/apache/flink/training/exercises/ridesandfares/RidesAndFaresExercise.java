@@ -18,6 +18,7 @@
 
 package org.apache.flink.training.exercises.ridesandfares;
 
+import org.apache.flink.api.common.functions.RuntimeContext;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.datastream.DataStream;
@@ -72,7 +73,8 @@ public class RidesAndFaresExercise extends ExerciseBase {
 
 		@Override
 		public void open(Configuration config) throws Exception {
-			throw new MissingSolutionException();
+			// FIXME: set up state
+			// https://ci.apache.org/projects/flink/flink-docs-release-1.12/dev/stream/state/state.html#keyed-datastream
 		}
 
 		@Override
